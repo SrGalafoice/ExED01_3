@@ -1,0 +1,34 @@
+package view;
+import controller.Ex1;
+
+public class MainEx1 {
+    public static void main(String[] args) {
+        Ex1 nomes = new Ex1();
+
+        nomes.adicionar("Bia");
+        nomes.adicionar("Carla");
+        nomes.adicionar("Bianca");
+        nomes.adicionar("Camila");
+        nomes.adicionar("Debora");
+        nomes.adicionar("Zuleika");
+        nomes.adicionar("Zoraide");
+        nomes.adicionar("Ana");
+        nomes.exibir();
+
+        System.out.println("Contem Joelma " + nomes.contemNome("Joelma"));
+        System.out.println("Contem Bianca " + nomes.contemNome("Carla"));
+
+        System.out.println("Remover Camila " + nomes.removerNome("Camila"));
+        System.out.println("Remover Marco " + nomes.removerNome("Marco"));
+
+        System.out.println("Nomes cadastrados: " + nomes.mostrarqntnome());
+
+        System.out.println("Renomear Carla para Carlos " + nomes.renomear("Carla", "Carlos"));
+        System.out.println("Renomear Zaza para Zozo " + nomes.renomear("Zaza", "Zozo"));
+        nomes.exibir();
+
+        System.out.println("Está vazia? " + nomes.Vazia());
+        System.out.println("Nomes cadastrados: " + nomes.mostrarqntnome());
+        nomes.exibir();
+    }
+}
